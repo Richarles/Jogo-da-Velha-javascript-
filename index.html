@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<title>Jogo da Velha</title>
+    </head>
+    <body>
+        <main>
+        <header><h1>Jogo da <img src="img/velha.png"></h1></header>
+        <div class="jogo">
+            <table>
+                <tr>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                </tr>
+                <tr>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                </tr>
+                <tr>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                    <th><input type="text" maxlength="1" name="ox" onchange="Entrada()"></th>
+                </tr>
+            </table>
+            <p id="demo"></p>
+            <div class="modal">
+            <div class="mensagem" id="msg">
+            <p id="tr"></p>
+            <input type="button" id="bt" value="Reiniciar" onclick="Recarrega()">
+                </div>
+            </div>
+        </div>
+            </main>
+        <script type="text/javascript" src="logica.js"></script>
+    </body>
+</html>
